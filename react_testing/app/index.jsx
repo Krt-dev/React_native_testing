@@ -9,11 +9,12 @@ import React from "react";
 import bg1 from "@/assets/images/usjr_newbg.jpg";
 
 import { Link } from "expo-router";
+import { StatusBar } from "expo-status-bar";
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <ImageBackground source={bg1} resizeMode="cover" style={styles.image}>
+      <ImageBackground source={bg1} resizeMode="cover" style={[styles.image]}>
         <Text style={styles.title}>A Nice App</Text>
         <Link href="/contact" style={{ marginHorizontal: "auto" }} asChild>
           <Pressable style={styles.button}>
@@ -43,6 +44,7 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: "cover",
     justifyContent: "center",
+    paddingtop: StatusBar.currentHeight
   },
   title: {
     color: "white",

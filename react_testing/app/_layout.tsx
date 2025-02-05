@@ -33,7 +33,7 @@ export default function RootLayout() {
       screenOptions={{
         headerStyle: { backgroundColor: theme.headerBackground },
         headerTintColor: theme.text,
-        headerShadowVisible: false,
+        headerShadowVisible: true,
       }}
     >
       <Stack.Screen
